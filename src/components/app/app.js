@@ -10,10 +10,12 @@ const App = () => {
     <Router>
       <div className="App">
         <Header />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/portfolio" component={Portfolio} />
-        </Switch>
+        <div className="main">
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/portfolio" component={Portfolio} />
+          </Switch>
+        </div>
       </div>
     </Router>
   );

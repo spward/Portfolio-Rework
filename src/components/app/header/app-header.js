@@ -16,30 +16,32 @@ const AppHeader = () => {
   return (
     <header className="header">
       <nav className="navbar">
-        <a className="navbar-brand logo_h" href="/">
-          <img src={logo} alt="Sean Ward Personal Logo" />
-        </a>
+        <Link to="/">
+          <img
+            src={logo}
+            className="navbar-brand"
+            alt="Sean Ward Personal Logo"
+          />
+        </Link>
+        <button className="icon" onClick={navToggle}>
+          <i className="fa fa-bars"></i>
+        </button>
         <div className="nav-routes">
           <ul className="nav" id="nav-links">
-            <li className="nav-item nav-icon">
-              <a href="#" className="icon" onClick={navToggle}>
-                <i className="fa fa-bars"></i>
-              </a>
-            </li>
-            <Link to="/">
+            <Link to="/" onClick={navToggle}>
               <li className="nav-item active">Home</li>
             </Link>
 
-            <Link to="/about">
+            <Link to="/about" onClick={navToggle}>
               <li className="nav-item">About Me</li>
             </Link>
-            <Link to="/experience">
+            <Link to="/experience" onClick={navToggle}>
               <li className="nav-item">Experience</li>
             </Link>
-            <Link to="/portfolio">
+            <Link to="/portfolio" onClick={navToggle}>
               <li className="nav-item">Portfolio</li>
             </Link>
-            <Link to="/contact">
+            <Link to="/contact" onClick={navToggle}>
               <li className="nav-item">Contact</li>
             </Link>
           </ul>
