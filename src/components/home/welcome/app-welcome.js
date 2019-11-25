@@ -4,8 +4,8 @@ import "./app-welcome.css";
 import { Link } from "react-router-dom";
 const AppWelcome = () => {
   return (
-    <div className="app-welcome container">
-      <div className="welcome--contents">
+    <div className="welcome container">
+      <div className="welcome__contents">
         <h5>Hello I'm</h5>
         <h2>Sean Ward</h2>
         <p>
@@ -40,7 +40,7 @@ const AppWelcome = () => {
           </ul>
         </div>
         <Link to="/portfolio">
-          <div className="main_btn">My Portfolio</div>
+          <div className="btn">My Portfolio</div>
         </Link>
       </div>
     </div>

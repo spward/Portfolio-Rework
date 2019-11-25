@@ -1,7 +1,5 @@
 .nav {
-  display: flex;
-  height: 100px;
-  width: 100%;
+  margin: 0 0 0 auto;
 
   a {
     margin-right: 55px;
@@ -10,34 +8,29 @@
       margin-right: 0;
     }
   }
+
+  &__links__item {
+    font: 500 12px/100px "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: #222222;
+    padding: 0px;
+    display: inline-block;
+  }
 }
 
-.header {
-  .navbar {
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    width: 85%;
-    height: 50px;
-    margin-top: 25px;
-    .nav-item {
-      font: 500 12px/100px "Roboto", sans-serif;
-      text-transform: uppercase;
-      color: #222222;
-      padding: 0px;
-      display: inline-block;
-    }
-  }
+.navbar {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  width: 85%;
+  height: 50px;
+  margin-top: 25px;
 }
 
 .icon {
   color: #62bdfc;
   font-size: 18px;
   z-index: 2;
-}
-
-.nav-routes {
-  margin: 0 0 0 auto;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -81,26 +74,26 @@
       margin-right: 0;
       text-align: center;
     }
+
+    .nav__links__item {
+      font-size: 20px;
+    }
+
+    li {
+      margin: 0 auto;
+      text-align: center;
+    }
   }
 
   i {
     font-size: 25px;
   }
 
-  .navbar-brand {
+  .nav__brand__icon {
     display: block;
     position: absolute;
     top: 20px;
     left: 40px;
     z-index: 2;
-  }
-
-  .mobile > li {
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .nav.mobile .header .navbar .nav-item {
-    font-size: 25px;
   }
 }

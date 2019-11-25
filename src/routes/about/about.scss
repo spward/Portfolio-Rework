@@ -1,0 +1,15 @@
+.about {
+  .row {
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__text {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  &__img {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+}

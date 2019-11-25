@@ -1,5 +1,6 @@
 import React from "react";
-import Welcome from "../../components/app/welcome";
+import Welcome from "../../components/home/welcome";
+
 const Home = () => {
   return (
     <div className="home">
