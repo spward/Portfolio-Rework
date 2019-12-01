@@ -5,9 +5,9 @@ import Resume from "../../assets/Sean Ward resume.pdf";
 
 const About = () => {
   return (
-    <div className="about container">
+    <div className="about container container-fluid">
       <div className="row">
-        <div className="about__text">
+        <div className="col-md-6 about__text">
           <h3>About Myself</h3>
           <p>
             Hello my name is Sean. I am a full stack web-developer. I have rich
@@ -20,8 +20,8 @@ const About = () => {
             My Resume
           </a>
         </div>
-        <div className="about__img">
-          <img src={ProfilePic} alt="" srcset="" />
+        <div className="col-md-4 about__img">
+          <img src={ProfilePic} alt="Profile of Sean Ward" />
         </div>
       </div>
     </div>
