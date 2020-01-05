@@ -1,7 +1,9 @@
 import React from "react";
 import "./Portfolio.scss";
-import Project from "../../components/Project";
-import Projects from "../../assets/projects.json";
+import Project from "../Project";
+import Projects from "../../../assets/projects.json";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const Portfolio = () => {
   return (
@@ -26,7 +28,9 @@ const Portfolio = () => {
       <div className="portfolio__inner row">
         {Projects.map(project => (
           <div className="col-lg-4 col-sm-6">
-            <Project props={project} />
+            <Router>
+              <Switch></Switch>
+            </Router>
           </div>
         ))}
       </div>

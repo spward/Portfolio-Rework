@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.scss";
-import Resume from "../../assets/Sean Ward resume.pdf";
+import Resume from "../../../assets/Sean Ward resume.pdf";
 
 const About = () => {
   return (

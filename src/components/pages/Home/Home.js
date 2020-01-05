@@ -1,6 +1,6 @@
 import React from "react";
-import Welcome from "../../components/Welcome";
-
+import Welcome from "../../Welcome";
+import "./Home.scss";
 const Home = () => {
   return (
     <div className="home">

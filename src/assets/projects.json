@@ -1,24 +1,14 @@
 [
   {
     "id": "1",
-    "name": "",
+    "name": "Weather App",
     "image": "",
-    "description": "This is a test",
+    "role": "This is a test",
     "difficulties": "",
     "solution": "",
-    "features": "",
-    "classes": "Yes",
-    "demo": "",
-    "github": ""
-  },
-  {
-    "id": "2",
-    "name": "",
-    "image": "",
-    "description": "This is a test2",
-    "difficulties": "",
-    "solution": "",
-    "features": "",
-    "classes": "Yes"
+    "features": [],
+    "demo": "https://sean-weather-app.herokuapp.com/",
+    "repo": "https://github.com/spward/Weather",
+    "tech": ["HTML5", "CSS3", "Sass", "PHP", "JavaScript", "jQuery"]
   }
 ]
