@@ -15,7 +15,7 @@ const Project = ({ props }) => {
         <div className="row">
           <div className="col-md-6">
             <div className="project__actions">
-              <a href="#" className="link">
+              <a href="#" className="link--inactive">
                 <i class="fas fa-desktop"></i>
                 <span>Live Preview</span>
               </a>

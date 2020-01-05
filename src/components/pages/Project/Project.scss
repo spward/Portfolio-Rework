@@ -18,6 +18,17 @@
     margin-bottom: 3rem;
   }
 
+  &__features {
+    ul {
+      padding-left: 20px;
+
+      li {
+        margin-bottom: 0.75rem;
+        list-style-type: disc;
+      }
+    }
+  }
+
   &__actions,
   &__technology,
   &__role,
@@ -28,7 +39,8 @@
   }
 
   &__actions {
-    .link {
+    .link,
+    .link--inactive {
       font-size: 1rem;
       text-decoration: none;
 
@@ -38,6 +50,13 @@
 
       &:not(:last-child) {
         margin-right: 2.5rem;
+      }
+    }
+    .link--inactive {
+      pointer-events: none;
+      color: rgba(68, 151, 226, 0.5);
+      i {
+        color: rgba(68, 151, 226, 0.5);
       }
     }
   }
