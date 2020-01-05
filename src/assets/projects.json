@@ -1,17 +1,21 @@
 [
   {
+    "id": "1",
     "name": "",
     "image": "",
     "description": "This is a test",
     "difficulties": "",
     "solution": "",
     "features": "",
-    "classes": "Yes"
+    "classes": "Yes",
+    "demo": "",
+    "github": ""
   },
   {
+    "id": "2",
     "name": "",
     "image": "",
-    "description": "This is a test",
+    "description": "This is a test2",
     "difficulties": "",
     "solution": "",
     "features": "",

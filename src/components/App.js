@@ -1,10 +1,11 @@
 import React from "react";
-import "./app.css";
-import Header from "./header";
-import Home from "../../routes/home";
-import About from "../../routes/about";
-import Portfolio from "../../routes/portfolio";
-import Experience from "../../routes/experience";
+import "./App.scss";
+import Header from "./Header";
+import Home from "../routes/Home";
+import About from "../routes/About";
+import Portfolio from "../routes/Portfolio";
+import Experience from "../routes/Experience";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {

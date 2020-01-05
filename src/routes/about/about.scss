@@ -1,11 +1,18 @@
-.about {
-  .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.about__skills {
+  text-align: center;
+}
 
-  img {
-    border-radius: 50%;
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__item {
+    margin: 15px;
+    text-align: center;
+    i {
+      font-size: 35px;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
   }
 }

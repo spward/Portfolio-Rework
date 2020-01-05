@@ -1,10 +1,9 @@
 import React from "react";
-import "./app-welcome.css";
-// import Resume from "../../../assets/Sean Ward resume.pdf";
+import "./app-welcome.scss";
 import { Link } from "react-router-dom";
 const AppWelcome = () => {
   return (
-    <div className="welcome container">
+    <div className="welcome container container-fluid">
       <div className="welcome__contents">
         <h5>Hello I'm</h5>
         <h2>Sean Ward</h2>

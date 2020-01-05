@@ -1,4 +1,4 @@
-@import "../../assets/scss-mixins/variables.scss";
+@import "../assets/scss/variables.scss";
 
 html {
   box-sizing: border-box;
@@ -37,8 +37,7 @@ img {
 }
 
 body {
-  background: url(../../assets/images/background.jpg) no-repeat center center
-    fixed;
+  background: url(../assets/images/background.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -92,27 +91,27 @@ p {
     linear,
     left top,
     right top,
-    from($purple),
-    color-stop(48%, $blue),
-    to($purple)
+    from($primary-color),
+    color-stop(48%, $secondary-color),
+    to($primary-color)
   );
   background-image: -webkit-linear-gradient(
     left,
-    $purple 0%,
-    $blue 48%,
-    $purple 100%
+    $primary-color 0%,
+    $secondary-color 48%,
+    $primary-color 100%
   );
   background-image: -o-linear-gradient(
     left,
-    $purple 0%,
-    $blue 48%,
-    $purple 100%
+    $primary-color 0%,
+    $secondary-color 48%,
+    $primary-color 100%
   );
   background-image: linear-gradient(
     to right,
-    $purple 0%,
-    $blue 48%,
-    $purple 100%
+    $primary-color 0%,
+    $secondary-color 48%,
+    $primary-color 100%
   );
   background-size: 200% auto;
   color: #fff;
@@ -128,6 +127,17 @@ p {
   &:hover {
     background-position: right center;
     color: #fff;
+  }
+}
+
+i {
+  color: $secondary-color;
+  -webkit-transition: all 300ms linear 0s;
+  -o-transition: all 300ms linear 0s;
+  transition: all 300ms linear 0s;
+
+  &:hover {
+    color: $primary-color;
   }
 }
 

@@ -1,30 +1,28 @@
+@import "../../assets/scss/variables.scss";
+
 .nav {
   margin: 0 0 0 auto;
-}
 
-.nav a {
-  margin-right: 55px;
-}
+  a {
+    margin-right: 55px;
 
-.nav a:last-child {
-  margin-right: 0;
-}
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
-.nav__links__item {
-  font: 500 12px/100px "Roboto", sans-serif;
-  text-transform: uppercase;
-  color: #222222;
-  padding: 0px;
-  display: inline-block;
+  &__links__item {
+    font: 500 12px/100px "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: #222222;
+    padding: 0px;
+    display: inline-block;
+  }
 }
 
 .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   width: 85%;
   height: 50px;
@@ -32,7 +30,7 @@
 }
 
 .icon {
-  color: #62bdfc;
+  color: $secondary-color;
   font-size: 18px;
   z-index: 2;
 }
@@ -50,10 +48,12 @@
     height: 100vh;
     left: 0;
     top: 0;
+
+    a {
+      display: none;
+    }
   }
-  .nav a {
-    display: none;
-  }
+
   button.icon {
     display: block;
     position: absolute;
@@ -62,38 +62,35 @@
     background: transparent;
     border: none;
   }
+
   .nav.mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     padding-top: 75px;
     z-index: 1;
     background-color: #fff;
+
+    a {
+      display: flex;
+      margin-right: 0;
+      text-align: center;
+    }
+
+    .nav__links__item {
+      font-size: 20px;
+    }
+
+    li {
+      margin: 0 auto;
+      text-align: center;
+    }
   }
-  .nav.mobile a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: 0;
-    text-align: center;
-  }
-  .nav.mobile .nav__links__item {
-    font-size: 20px;
-  }
-  .nav.mobile li {
-    margin: 0 auto;
-    text-align: center;
-  }
+
   i {
     font-size: 25px;
   }
+
   .nav__brand__icon {
     display: block;
     position: absolute;

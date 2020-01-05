@@ -1,6 +1,6 @@
 import React from "react";
-import "./portfolio.css";
-import Project from "../../components/project";
+import "./Portfolio.scss";
+import Project from "../../components/Project";
 import Projects from "../../assets/projects.json";
 
 const Portfolio = () => {

@@ -1,6 +1,6 @@
 import React from "react";
-import "./app-header.css";
-import logo from "../../../assets/images/favicon.png";
+import "./app-header.scss";
+import logo from "../../assets/images/favicon.png";
 import { Link } from "react-router-dom";
 
 const AppHeader = () => {
