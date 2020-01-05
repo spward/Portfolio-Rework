@@ -1,4 +1,4 @@
-@import "../assets/scss/variables.scss";
+@import "./assets/scss/variables";
 
 html {
   box-sizing: border-box;
@@ -37,7 +37,7 @@ img {
 }
 
 body {
-  background: url(../assets/images/background.jpg) no-repeat center center fixed;
+  background: url(./assets/images/background.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
