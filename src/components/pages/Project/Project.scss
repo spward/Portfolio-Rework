@@ -1,9 +1,11 @@
 @import "../../../assets/scss/variables";
+
 .project {
   margin: 5rem 0;
 
   h3 {
     text-align: center;
+    text-transform: capitalize;
   }
 
   &__photo {
@@ -52,9 +54,11 @@
         margin-right: 2.5rem;
       }
     }
+
     .link--inactive {
       pointer-events: none;
       color: rgba(68, 151, 226, 0.5);
+
       i {
         color: rgba(68, 151, 226, 0.5);
       }
@@ -66,6 +70,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 1rem;
     padding: 0;
+
     li {
       display: block;
       margin-right: 0.5rem;

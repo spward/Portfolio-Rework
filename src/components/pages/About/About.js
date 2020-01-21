@@ -15,7 +15,12 @@ const About = () => {
             development and branding fields. I strongly believe that anything is
             possible as long as your mind is set to it.
           </p>
-          <a href={Resume} target="blank" className="btn">
+          <a
+            href={Resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn"
+          >
             My Resume
           </a>
         </div>

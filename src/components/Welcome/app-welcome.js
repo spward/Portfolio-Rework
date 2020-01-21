@@ -14,24 +14,37 @@ const AppWelcome = () => {
         <div className="social">
           <ul className="list">
             <li>
-              <a href="http://www.github.com/spward" target="blank">
+              <a
+                href="http://www.github.com/spward"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-github"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/sward7/" target="blank">
+              <a
+                href="https://www.linkedin.com/in/sward7/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-linkedin-in"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.dribbble.com/Denial" target="blank">
+              <a
+                href="https://www.dribbble.com/Denial"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-dribbble"></i>
               </a>
             </li>
             <li>
               <a
                 href="https://stackoverflow.com/users/8120909/sean"
-                target="blank"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <i className="fab fa-stack-overflow"></i>
               </a>

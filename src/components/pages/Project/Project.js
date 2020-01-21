@@ -5,7 +5,7 @@ import weather from "../../../assets/images/projects/weather.png";
 const Project = ({ props }) => {
   return (
     <div className="project">
-      <h3>Test Title</h3>
+      <h3>Weather app</h3>
       <img
         src={weather}
         alt="The projects visual representation"
@@ -15,11 +15,21 @@ const Project = ({ props }) => {
         <div className="row">
           <div className="col-md-6">
             <div className="project__actions">
-              <a href="#" className="link--inactive">
+              <a
+                href="http://www.theseanward.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link--inactive"
+              >
                 <i class="fas fa-desktop"></i>
                 <span>Live Preview</span>
               </a>
-              <a href="#" className="link">
+              <a
+                href="http://www.theseanward.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link"
+              >
                 <i class="fas fa-code-branch"></i>
                 <span>View Source</span>
               </a>
@@ -40,9 +50,9 @@ const Project = ({ props }) => {
                 <li>Login</li>
                 <li>Account Confirmation</li>
                 <li>Token Authentication with JSON Web Token</li>
-                <li>Automatic Image resiging on images over 1600px wide</li>
+                <li>Automatic Image resizing on images over 1600px wide</li>
                 <li>select multiple items to perform batch operations</li>
-                <li>Type photo colection name to confirm delete</li>
+                <li>Type photo collection name to confirm delete</li>
               </ul>
             </div>
           </div>
@@ -70,7 +80,7 @@ const Project = ({ props }) => {
               <p>
                 To solve this struggle, I decided to kick it old school with
                 some good ol' Object Oriented Design and Analysis. Following a
-                planning structure, I was able to improve my work efficency and
+                planning structure, I was able to improve my work efficiency and
                 reach my set sprints.
               </p>
             </div>
