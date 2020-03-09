@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Portfolio.scss";
-// import Project from "../Project";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([]);
@@ -36,7 +36,14 @@ const Portfolio = () => {
             className={"project card " + project.tech.join(" ").toLowerCase()}
             key={project.id}
           >
-            <h3>{project.name}</h3>
+            <Link
+              to={{
+                pathname: `portfolio/${project.name}`,
+                props: `${project}`
+              }}
+            >
+              <h2>{project.name}</h2>
+            </Link>
           </div>
         ))}
       </div>

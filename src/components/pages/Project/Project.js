@@ -2,10 +2,11 @@ import React from "react";
 import "./Project.scss";
 import weather from "../../../assets/images/projects/weather.png";
 
-const Project = ({ props }) => {
+const Project = ({ props, match }) => {
+  let name = match.params;
   return (
     <div className="project">
-      <h3>Weather app</h3>
+      <h3>{[name]}</h3>
       <img
         src={weather}
         alt="The projects visual representation"
@@ -21,7 +22,7 @@ const Project = ({ props }) => {
                 rel="noopener noreferrer"
                 className="link--inactive"
               >
-                <i class="fas fa-desktop"></i>
+                <i className="fas fa-desktop"></i>
                 <span>Live Preview</span>
               </a>
               <a
@@ -30,7 +31,7 @@ const Project = ({ props }) => {
                 rel="noopener noreferrer"
                 className="link"
               >
-                <i class="fas fa-code-branch"></i>
+                <i className="fas fa-code-branch"></i>
                 <span>View Source</span>
               </a>
             </div>
