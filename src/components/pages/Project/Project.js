@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Project.scss";
 import weather from "../../../assets/images/projects/weather.png";
 
-const Project = ({ props, match }) => {
-  let name = match.params;
+const Project = ({ match }) => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    fetch("/projects.json")
+      .then(res => res.json())
+      .then(data => {
+        setProjects(data);
+      });
+  }, []);
+
+  const project = projects.find(project => {
+    return match.params.projectName === project.name;
+  });
+
+  console.log(project);
   return (
     <div className="project">
-      <h3>{[name]}</h3>
+      <h3>{project}</h3>
       <img
         src={weather}
         alt="The projects visual representation"
