@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./Project.scss";
 import weather from "../../../assets/images/projects/weather.png";
+import projectJSON from "../../../assets/projects.json";
 
 const Project = ({ match }) => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch("/projects.json")
-      .then(res => res.json())
-      .then(data => {
-        setProjects(data);
-      });
+    setProjects(projectJSON);
   }, []);
 
   const project = projects.find(project => {

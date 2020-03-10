@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./Portfolio.scss";
 import { Link } from "react-router-dom";
+import projectJSON from "../../../assets/projects.json";
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch("/projects.json")
-      .then(res => res.json())
-      .then(data => {
-        setProjects(data);
-      });
+    setProjects(projectJSON);
   }, []);
 
   return (
