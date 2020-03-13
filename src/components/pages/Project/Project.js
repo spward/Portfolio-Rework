@@ -1,26 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Project.scss";
-import weather from "../../../assets/images/projects/weather.png";
-import projectJSON from "../../../assets/projects.json";
+import projects from "../../../assets/projects.json";
 
 const Project = ({ match }) => {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    setProjects(projectJSON);
-  }, []);
-
   const project = projects.find(project => {
     return match.params.projectName === project.name;
   });
 
-  console.log(project);
   return (
     <div className="project">
-      <h3>{project}</h3>
+      <h3>{project.name}</h3>
       <img
-        src={weather}
-        alt="The projects visual representation"
+        src={`/projects/${project.image}`}
+        alt={project.name}
         className="project__photo"
       />
       <div className=" container container-fluid project__details">
@@ -28,19 +20,19 @@ const Project = ({ match }) => {
           <div className="col-md-6">
             <div className="project__actions">
               <a
-                href="http://www.theseanward.com"
+                href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="link--inactive"
+                className={project.demo === "" ? "link--inactive" : "link"}
               >
                 <i className="fas fa-desktop"></i>
                 <span>Live Preview</span>
               </a>
               <a
-                href="http://www.theseanward.com"
+                href={project.repo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="link"
+                className={project.repo === "" ? "link--inactive" : "link"}
               >
                 <i className="fas fa-code-branch"></i>
                 <span>View Source</span>
@@ -71,30 +63,15 @@ const Project = ({ match }) => {
           <div className="col-md-6">
             <div className="project__role">
               <h5>My Roles</h5>
-              <p>
-                In this project I oversaw the entire SDLC. I met regularly with
-                the client discussing project requirements, vision and end
-                goals, while working in a scrum like manner.
-              </p>
+              <p>{project.role}</p>
             </div>
             <div className="project__difficulties">
               <h5>Project Difficulties</h5>
-              <p>
-                This project really tested my skills in architecting out a
-                workable solution. In the beginning of development, the first
-                thing I did was starting up an express server. With no plan of
-                action, I wasted two weeks worth of work before I was forced to
-                start over.
-              </p>
+              <p>{project.difficulties}</p>
             </div>
             <div className="project__solution">
               <h5>My Solution</h5>
-              <p>
-                To solve this struggle, I decided to kick it old school with
-                some good ol' Object Oriented Design and Analysis. Following a
-                planning structure, I was able to improve my work efficiency and
-                reach my set sprints.
-              </p>
+              <p>{project.solution}</p>
             </div>
           </div>
         </div>

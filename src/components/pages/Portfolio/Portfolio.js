@@ -1,15 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Portfolio.scss";
 import { Link } from "react-router-dom";
-import projectJSON from "../../../assets/projects.json";
+import projects from "../../../assets/projects.json";
 
 const Portfolio = () => {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    setProjects(projectJSON);
-  }, []);
-
   return (
     <div className="portfolio container container-fluid">
       <h3>My Portfolio</h3>
@@ -28,23 +22,22 @@ const Portfolio = () => {
             <button>Web Design</button>
           </li>
         </ul>
-        {projects.map(project => (
-          <div
-            className={"project card " + project.tech.join(" ").toLowerCase()}
-            key={project.id}
-          >
-            <Link
-              to={{
-                pathname: `portfolio/${project.name}`,
-                props: `${project}`
-              }}
-            >
-              <h2>{project.name}</h2>
+
+        <div className="projects">
+          {projects.map(project => (
+            <Link to={`portfolio/${project.name}`} key={project.id}>
+              <div
+                className={
+                  "project--item card " + project.tech.join(" ").toLowerCase()
+                }
+                key={project.id}
+              >
+                <h3>{project.name}</h3>
+              </div>
             </Link>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-      <div className="portfolio__inner row"></div>
     </div>
   );
 };

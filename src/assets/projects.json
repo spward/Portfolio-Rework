@@ -2,10 +2,10 @@
   {
     "id": "1",
     "name": "Weather App",
-    "image": "",
-    "role": "This is a test",
-    "difficulties": "",
-    "solution": "",
+    "image": "weather.png",
+    "role": "In this project I oversaw the entire SDLC. I met regularly with the client discussing project requirements, vision and end goals, while working in a scrum like manner.",
+    "difficulties": "This project really tested my skills in architecting out a workable solution. In the beginning of development, the first thing I did was starting up an express server. With no plan of action, I wasted two weeks worth of work before I was forced to start over.",
+    "solution": "To solve this struggle, I decided to kick it old school with some good ol' Object Oriented Design and Analysis. Following a planning structure, I was able to improve my work efficiency and reach my set sprints.",
     "features": [],
     "demo": "https://sean-weather-app.herokuapp.com/",
     "repo": "https://github.com/spward/Weather",
@@ -19,8 +19,8 @@
     "difficulties": "",
     "solution": "",
     "features": [],
-    "demo": "https://sean-weather-app.herokuapp.com/",
-    "repo": "https://github.com/spward/Weather",
+    "demo": "",
+    "repo": "",
     "tech": ["HTML5", "CSS3", "Sass", "PHP", "JavaScript", "jQuery"]
   }
 ]
