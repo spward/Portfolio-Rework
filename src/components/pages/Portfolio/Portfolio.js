@@ -9,15 +9,18 @@ const Portfolio = () => {
       <div className="projects">
         {projects.map(project => (
           <Link to={`portfolio/${project.name}`} key={project.id}>
-            <div className={"card"} key={project.id}>
-              <div className="project__item">
-                <img
-                  src={`/projects/thumbnails/${project.thumbnail}`}
-                  alt={project.name}
-                />
-                <div className="project__item--text">
-                  <h3>{project.name}</h3>
-                </div>
+            <div className="project__item" key={project.id}>
+              <img
+                src={`/projects/thumbnails/${project.thumbnail}`}
+                alt={project.name}
+              />
+              <div className="project__item--text">
+                <h3>{project.name}</h3>
+                <ul>
+                  {project.technologies.map((technology, index) => (
+                    <li key={index}>{technology}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           </Link>

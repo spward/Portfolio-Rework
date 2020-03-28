@@ -3,24 +3,32 @@
     "id": "1",
     "name": "Weather App",
     "image": "weather.png",
-    "role": "In this project I oversaw the entire SDLC. I met regularly with the client discussing project requirements, vision and end goals, while working in a scrum like manner.",
-    "difficulties": "This project really tested my skills in architecting out a workable solution. In the beginning of development, the first thing I did was starting up an express server. With no plan of action, I wasted two weeks worth of work before I was forced to start over.",
-    "solution": "To solve this struggle, I decided to kick it old school with some good ol' Object Oriented Design and Analysis. Following a planning structure, I was able to improve my work efficiency and reach my set sprints.",
-    "features": [],
+    "role": "I was the sole developer and designer of this project. Every asset on this project except for the animated weather icons was created from scratch",
+    "difficulties": "I wanted to create an app that would take your current geolocation and present the current and weekly forecast to the user easily through visual and readable information",
+    "solution": "I decided to create everything from scratch to allow for flexibility and responsiveness. I went with a space like design to represent stars and clouds.",
+    "technologies": ["Javascript", "HTML5", "SCSS", "Fetch API", "Geolocation"],
+    "features": [
+      "Current Forecast",
+      "7 Day Forecast",
+      "Animated Icons",
+      "Fetch API",
+      "Geolocation authentication"
+    ],
     "demo": "https://sean-weather-app.herokuapp.com/",
     "repo": "https://github.com/spward/Weather",
     "thumbnail": "weather.jpg"
   },
   {
     "id": "2",
-    "name": "Music App",
+    "name": "Socket.IO Chat System",
     "image": "",
-    "role": "This is a test",
-    "difficulties": "",
+    "role": "I was the sole developer and designer of this project. It is a live messaging service that will take in a name and allow users to message eachother instantaneously.",
+    "difficulties": "The difficulty of this project was having the chat know which user sends a message and assigning it to that user",
     "solution": "",
-    "features": [],
-    "demo": "",
-    "repo": "",
-    "thumbnail": "weather.jpg"
+    "technologies": ["Javascript", "HTML5", "SCSS"],
+    "features": ["Socket.IO"],
+    "demo": "https://socketio-chat-system.herokuapp.com/",
+    "repo": "https://github.com/spward/socket.io-chat-system",
+    "thumbnail": ""
   }
 ]

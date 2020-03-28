@@ -41,22 +41,17 @@ const Project = ({ match }) => {
             <div className="project__technology">
               <h5>technologies Used</h5>
               <ul className="technology__list col-md-4">
-                <li>ReactJS</li>
-                <li>NodeJS</li>
-                <li>Typescript</li>
-                <li>ExpressJS</li>
+                {project.technologies.map((technology, index) => (
+                  <li key={index}>{technology}</li>
+                ))}
               </ul>
             </div>
             <div className="project__features">
               <h5>Notable Features</h5>
               <ul>
-                <li>Registration</li>
-                <li>Login</li>
-                <li>Account Confirmation</li>
-                <li>Token Authentication with JSON Web Token</li>
-                <li>Automatic Image resizing on images over 1600px wide</li>
-                <li>select multiple items to perform batch operations</li>
-                <li>Type photo collection name to confirm delete</li>
+                {project.features.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
               </ul>
             </div>
           </div>
