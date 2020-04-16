@@ -20,15 +20,50 @@
   },
   {
     "id": "2",
-    "name": "Socket.IO Chat System",
-    "image": "",
+    "name": "Vue Music App",
+    "image": "music.png",
     "role": "I was the sole developer and designer of this project. It is a live messaging service that will take in a name and allow users to message eachother instantaneously.",
     "difficulties": "The difficulty of this project was having the chat know which user sends a message and assigning it to that user",
     "solution": "",
-    "technologies": ["Javascript", "HTML5", "SCSS"],
-    "features": ["Socket.IO"],
+    "technologies": ["VueJS", "VueX", "Napster", "SCSS"],
+    "features": [
+      "Music on demand",
+      "Custom Audio Player",
+      "Live refreshes",
+      "Top  hits for the day, month, year, and lifetime"
+    ],
+    "demo": "",
+    "repo": "https://github.com/spward/Vue-Music",
+    "thumbnail": "music.png"
+  },
+  {
+    "id": "3",
+    "name": "Socket.IO Chat System",
+    "image": "socketio.png",
+    "role": "I was the sole developer and designer of this project. It is a live messaging service that will take in a name and allow users to message eachother instantaneously.",
+    "difficulties": "The difficulty of this project was having the chat know which user sends a message and assigning it to that user",
+    "solution": "",
+    "technologies": ["Javascript", "HTML5", "SCSS", "Socket.IO"],
+    "features": [
+      "Realtime communication",
+      "username selection system",
+      "Light and dark themes"
+    ],
     "demo": "https://socketio-chat-system.herokuapp.com/",
     "repo": "https://github.com/spward/socket.io-chat-system",
-    "thumbnail": ""
+    "thumbnail": "socketio.png"
+  },
+  {
+    "id": "4",
+    "name": "Discord Authentication",
+    "image": "discord.png",
+    "role": "I was a solo developer for a freelance project that was to use the Discord API and authentication to create a secure login system.",
+    "difficulties": "Authenticating the user with Discords API and storing the data to use all of the information.",
+    "solution": "",
+    "technologies": ["NodeJS", "ReactJS", "Discord API"],
+    "features": ["Authentication System", "Discord Integration"],
+    "demo": "",
+    "repo": "",
+    "thumbnail": "discord.png"
   }
 ]
